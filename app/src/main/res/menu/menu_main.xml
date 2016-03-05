@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="ca.truewebdev.friends.MainActivity">
+    <item
+        android:id="@+id/searchRecords"
+        android:icon="@android:drawable/ic_menu_search"
+        android:orderInCategory="10"
+        android:showAsAction="always"
+        android:title="@string/main_search_title"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+        android:id="@+id/addRecord"
+        android:icon="@android:drawable/ic_menu_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:title="@string/main_add_title"
+        tools:ignore="AppCompatResource"/>
+
+    <item
+
+        android:id="@+id/deleteDatabase"
+        android:orderInCategory="50"
+        android:showAsAction="never"
+        android:title="@string/main_deleteDatabase_title"
+        tools:ignore="AppCompatResource"/>
+
+</menu>

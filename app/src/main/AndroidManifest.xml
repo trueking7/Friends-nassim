@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="ca.truewebdev.friends"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <permission android:name="ca.truewebdev.friends.provider.READWRITE"/>
+    <uses-permission android:name="ca.truewebdev.friends.provider.READWRITE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="ca.truewebdev.friends.FriendsProvider"
+            android:authorities="ca.truewebdev.friends.provider"
+            android:exported="true"
+            android:readPermission="ca.truewebdev.friends.provider.READWRITE"
+            android:writePermission="ca.truewebdev.friends.provider.READWRITE"/>
+    </application>
+
+</manifest>
