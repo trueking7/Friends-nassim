@@ -4,4 +4,6 @@
     <string name="main_search_title">Search</string>
     <string name="main_add_title">Add</string>
     <string name="main_deleteDatabase_title">Delete Database</string>
+    <string name="search_title">Enter name</string>
+    <string name="searchButtonText">Search</string>
 </resources>
